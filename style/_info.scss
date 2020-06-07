@@ -1,0 +1,31 @@
+#MenuHeader{}
+
+.menu-header {
+  margin-bottom: 10px;
+}
+
+.menu-header h2{
+  line-height: 1;
+  padding: 15px 0 5px 0;
+  font-size: 28px;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-info{
+  width: 80%;
+}
+
+.menu-info dt{
+  width: 30%;
+  float: left;
+}
+
+.menu-info dd{
+  width: 70%;
+  float: right;
+  text-align: right;
+}

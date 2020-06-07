@@ -1,0 +1,142 @@
+//Styles that are specific to products grid will go here
+
+//create grid layout for the burger items
+
+//style burger list items: text styles, list style, hover state
+
+#CategoryList{
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  clear: both;
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+.category{
+  background-color: #333333;
+  color: #FFF;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.category:hover{
+  background-color: #af2f26;
+}
+
+.selected-category{
+  background-color: #af2f26;
+}
+
+.category + .category{
+  border-top: 2px #f2b378 solid;
+}
+
+#ProductList{
+  margin: 20px 0 0 0;
+  float: right;
+  width: 78%;
+}
+
+.category-header{
+  width: 96%;
+}
+
+.category-name{
+  background-image: url(../img/Burger-Category-Header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 160px;
+  width: 100%;
+  display: block;
+  font-size: 0;
+}
+
+.category-description{
+  background-color: #333;
+  color: #FFF;
+  line-height: 1;
+  padding: 10px;
+  border-top: 2px #f2b378 solid;
+}
+
+#ProductList ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+  width: 96%;
+}
+
+#ProductList ul li{
+  width: 49%;
+}
+
+.product-image{
+  width: 100%;
+  height: 200px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;  
+}
+
+#prod1 .product-image{
+  background-image: url('../img/Products/Classic-Burger.jpg');
+}
+
+#prod2 .product-image{
+  background-image: url('../img/Products/Cheese-Burger.png');
+}
+
+.product-detail{
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#prod1 .product-detail{
+  background-color: #FFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 2px #af2f26 solid;
+}
+
+
+.product-title{
+  text-align: center;
+  color: #af2f26;
+  font-size: 23px;
+  line-height: 1;
+  padding: 0 0 7px 0;
+}
+
+.product-detail span:nth-child(2){
+  font-size: 15px;
+  font-style: italic;
+}
+
+.product-detail span:nth-child(3){
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+#prod3, #prod4, #prod5{
+  display: none;
+}

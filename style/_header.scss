@@ -1,0 +1,94 @@
+//styles for the header and footer will go here
+
+#HeaderBar {
+  background-color: $charcoal;
+  margin: 0px -2000px;
+  padding: 0px 2000px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//style the nav links, incl hover/active state
+.nav-links li {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.3em;
+
+    a {
+    color: $gold;
+    &:hover, &:active {
+      color: $red;
+    }
+  }
+}
+
+nav {
+  flex: 1;
+}
+
+.nav-links{
+
+}
+
+//style the logo/brand name
+.brand-name {
+  font-size: 0;
+  line-height: 0;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 144px;
+  width: 131px;
+  margin-top: 33px;
+  display: block;
+}
+
+//style the login buttom, make it sit at top right
+#Login {
+  background-color: $teal;
+  border: 0;
+  border-bottom: 2px #2891a0 solid;
+  width: 110px;
+  padding: 5px 0;
+  font-size: 1.3em;
+  margin-top: -90px;
+  cursor: pointer;
+}
+
+//style the footer links to be side-by-side, with olo.com on left and others on right
+
+//resolve footer width with body bg
+body{
+  background-color: #333333;
+}
+
+footer {
+  background-color: #333333;
+  width: 1000px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    color: white;
+  }
+
+  a + a{
+    border-left: 1px #FFF solid;
+    padding-left: 6px;
+    margin-left: 6px;
+  }
+
+  #FooterLinks {
+  }
+
+  .olo-link {
+  }
+}
